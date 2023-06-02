@@ -9,7 +9,12 @@ import java.util.List;
 public class JpaMain {
 
     public static void main(String[] args) {
-
+        /*
+        3 부분으로 구성된 코드
+        - 엔티티 매니저 설정
+        - 트랜잭션 관리
+        - 비즈니스 관리
+         */
         //엔티티 매니저 팩토리 생성
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpabook");
         EntityManager em = emf.createEntityManager(); //엔티티 매니저 생성
@@ -32,7 +37,7 @@ public class JpaMain {
 
         emf.close(); //엔티티 매니저 팩토리 종료
     }
-
+    // 비즈니스 로직
     public static void logic(EntityManager em) {
 
         String id = "id1";

@@ -19,6 +19,8 @@ public class Member {
 
     private Integer age;
 
+    // getter and setter
+
     public String getId() {
         return id;
     }
